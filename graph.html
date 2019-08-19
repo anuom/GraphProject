@@ -9,14 +9,19 @@
 <script type="text/javascript" src="dygraph.js"></script>
 <link rel="stylesheet" src="dygraph.css" />
 </head>
+
+<!-- Navigation header -->
 <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="#">AAPL Price Graph</a>
 </nav>
+
+<!-- Div to display the graph -->
 <body>
 <div id="graphdiv" style=" margin-top: 50px; margin-left: 100px; width: 70%; height: 70%;">
 </div>
 
 <script type="text/javascript">
+//create an instance and send the destination element, data and options
   g = new Dygraph(
     document.getElementById("graphdiv"),"AAPL.csv",
     {
@@ -27,8 +32,7 @@
       title: 'Graph using Dygraph',
       rollPeriod: 7
       
-    }
-  );
+    });
 </script>
 </body>
 </html>
